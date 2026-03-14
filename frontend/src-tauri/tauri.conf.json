@@ -1,0 +1,30 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "FLAP OS",
+  "version": "0.1.0",
+  "identifier": "ai.parshu.flapos",
+  "build": {
+    "beforeDevCommand": "npm run dev --prefix ../",
+    "beforeBuildCommand": "npm run build --prefix ../",
+    "frontendDist": "../build",
+    "devUrl": "http://127.0.0.1:4173"
+  },
+  "app": {
+    "windows": [
+      {
+        "title": "FLAP OS",
+        "width": 1400,
+        "height": 900,
+        "resizable": true
+      }
+    ],
+    "security": {
+      "csp": null
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": "all",
+    "icon": []
+  }
+}

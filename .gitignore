@@ -4,6 +4,8 @@ __pycache__/
 *.pyc
 node_modules/
 frontend/node_modules/
+frontend/.svelte-kit/
+frontend/build/
 terminal-server/node_modules/
 .pytest_cache/
 .DS_Store
