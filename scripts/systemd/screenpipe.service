@@ -1,0 +1,16 @@
+[Unit]
+Description=Screenpipe Service for FLAP Memory
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=parshu
+WorkingDirectory=/home/parshu
+Environment=HOME=/home/parshu
+ExecStart=/usr/bin/env screenpipe --port 3030
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
